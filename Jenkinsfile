@@ -2,7 +2,7 @@ pipeline
 {
 	agent {
 		label {
-			label "buit-in"
+			label "built-in"
 			customWorkspace "/mnt/data/project-2/"
 		}
 	}
@@ -10,7 +10,7 @@ pipeline
 	stages {
 		stage('stage-1'){
 			steps{
-				sh "echo 'this is 22Q2 branch' "
+				sh "echo 'this is master branch' "
 				}
 		}
 	}
