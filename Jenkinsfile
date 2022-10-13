@@ -1,19 +1,15 @@
-pipeline{
-
-		agent {
-				label {
-					label "built-in"
-					customWorkspace "/mnt/project-1/"
-				}
+pipeline
+{
+	agent {
+		label {
+			label "buit-in"
+			customWorkspace "/mnt/data/project-2/"
 		}
-		
-		stages{
-			stage('deploy-index'){
-			
-				steps {
-					sh "cp -r index.html /var/www/html/index.html"
-					sh "chmod -R 777 /var/www/html/index.html"
-				}
+	}
+	
+	stages {
+		stage('stage-1'){
+			sh "echo 'this is master branch' "
 		}
 	}
 }
