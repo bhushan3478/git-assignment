@@ -10,7 +10,7 @@ pipeline
 	stages {
 		stage('stage-1'){
 			steps{
-				sh "echo 'this is master branch' "
+				sh "echo 'this is 22Q2 branch' "
 				}
 		}
 	}
