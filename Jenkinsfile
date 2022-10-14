@@ -12,7 +12,7 @@ pipeline
 			agent{
 				label{
 					label '172.31.34.186'
-					customWorkspace '/mnt/project-1/'
+					customWorkspace '/mnt/project/'
 				}
 			}
 			
