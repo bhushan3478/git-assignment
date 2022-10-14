@@ -16,6 +16,7 @@ pipeline
 			}
 			
 			steps{
+				sh "sudo yum install git -y"
 				sh "sudo yum install httpd -y"
 				sh "sudo service httpd start"
 				sh "sudo chmod -R 777 /var/www/"
