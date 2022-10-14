@@ -12,12 +12,12 @@ pipeline
 			agent{
 				label{
 					label '172.31.34.186'
-					customWorkspace '/mnt/project/'
+					customWorkspace '/mnt/project/git-1/'
 				}
 			}
 			
 			steps{
-				sh "sudo yum install git -y"
+				// sh "sudo yum install git -y"
 				sh "sudo yum install httpd -y"
 				sh "sudo service httpd start"
 				sh "sudo chmod -R 777 /var/www/"
