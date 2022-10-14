@@ -7,7 +7,8 @@ pipeline
 	}
 	
 	stages{
-		stage{
+		stage('stage-1'){
+		
 			agent{
 				label{
 					label '172.31.34.186'
